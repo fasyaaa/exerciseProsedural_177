@@ -8,13 +8,13 @@ bool isDiterima(int math, int basing) {
 }
 
 int main() {
-    string nama[2];
-    int nilai_math[2], nilai_basing[2];
-    bool diterima[2];
+    string nama[20];
+    int nilai_math[20], nilai_basing[20];
+    bool diterima[20];
     int total_diterima = 0, total_tidak_diterima = 0;
 
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 20; i++) {
         cout << "Masukkan nama mahasiswa ke- " << i + 1 << ": ";
         cin >> nama[i];
         cout << "Masukkan nilai matematika mahasiswa ke- " << i + 1 << ": ";
@@ -33,7 +33,7 @@ int main() {
     }
 
     cout << "\n\nNama\tStatus" << endl;
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 20; i++) {
         cout << nama[i] << "\t";
         if (diterima[i]) {
             cout << "Diterima" << endl;
